@@ -4,7 +4,9 @@
 
 ###### Pre-Install Section
 [Version 1.2.0 to 1.4.0](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/10/1.2.0_1.4.0_diff_kO7vMycf.zip)
+
 [Version 1.3.0 to 1.4.0](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/10/1.3.0_1.4.0_diff_hLOEnPIc.zip)
+
 [Version 1.3.2 to 1.4.0](https://autopatchhk.yuanshen.com/client_app/update/hk4e_global/10/1.3.2_1.4.0_diff_1P539V4J.zip)
 
 ###### Full Install Section
