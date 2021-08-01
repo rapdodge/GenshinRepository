@@ -70,6 +70,6 @@ if ($ResponcURL['message'] != "OK") {
 		'diffs' => $DataPraUnduh,
 	);
 
-	$Hasil = array_merge($DataTerbaruGabung, $DataPraUnduhGabung);
+	$Hasil = array_merge($CekApi, $DataTerbaruGabung, $DataPraUnduhGabung);
 	print_r(json_encode($Hasil));
 }
