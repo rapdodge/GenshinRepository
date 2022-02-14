@@ -106,8 +106,26 @@ if ($ResponcURL['message'] != "OK") {
 		$DataSuaraPraUnduh['voice_packs'][$k]['md5'] = $ResponcURL['data']['pre_download_game']['latest']['voice_packs'][$k]['md5'];
 	};
 
+	$DataPraUnduh = array();
+	foreach ($ResponcURL['data']['pre_download_game']['diffs'] as $k0 => $v0) {
+		$DataPraUnduh[$k0]['version'] = $ResponcURL['data']['pre_download_game']['diffs'][$k0]['version'];
+		$DataPraUnduh[$k0]['name'] = $ResponcURL['data']['pre_download_game']['diffs'][$k0]['name'];
+		$DataPraUnduh[$k0]['path'] = $ResponcURL['data']['pre_download_game']['diffs'][$k0]['path'];
+		$DataPraUnduh[$k0]['md5'] = $ResponcURL['data']['pre_download_game']['diffs'][$k0]['md5'];
+		foreach ($ResponcURL['data']['pre_download_game']['diffs'][$k0]['voice_packs'] as $k1 => $v1) {
+			$DataPraUnduh[$k0]['voice_packs'][$k1]['language'] = $ResponcURL['data']['pre_download_game']['diffs'][$k0]['voice_packs'][$k1]['language'];
+			$DataPraUnduh[$k0]['voice_packs'][$k1]['name'] = $ResponcURL['data']['pre_download_game']['diffs'][$k0]['voice_packs'][$k1]['name'];
+			$DataPraUnduh[$k0]['voice_packs'][$k1]['path'] = $ResponcURL['data']['pre_download_game']['diffs'][$k0]['voice_packs'][$k1]['path'];
+			$DataPraUnduh[$k0]['voice_packs'][$k1]['md5'] = $ResponcURL['data']['pre_download_game']['diffs'][$k0]['voice_packs'][$k1]['md5'];
+		}
+	}
+
+	$GabungDataPraUnduh = array(
+		'diffs' => array_merge($DataPraUnduh),
+	);
+
 	$GabungGameSuaraPraUnduh = array(
-		'pre_download_game' => array_merge($DataGamePraUnduh, $DataSuaraPraUnduh),
+		'pre_download_game' => array_merge($DataGamePraUnduh, $DataSuaraPraUnduh, $GabungDataPraUnduh),
 	);
 
 	// PEMBATAS
