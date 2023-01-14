@@ -1,5 +1,7 @@
-# GenshinRepository
-This repository includes direct links to Genshin Impact updates, with this, it allows you to download Genshin Impact updates without a launcher, but using a download manager (like IDM, FDM, XDM, uGet, etc.)
+# GenshinRepository - Unmaintained
+This repository includes direct links to Genshin Impact updates. With this, it allows you to download Genshin Impact updates without a launcher, but using a download manager (like IDM, FDM, XDM, uGet, etc.).
+
+Thank you for entrusting this repository to download Genshin Impact data directly. With a heavy heart, I have to stop this for personal reasons. But don't worry; I'm sure you can do it yourself. Once again, thank you for trusting this repository.
 
 API response
 ````markdown
